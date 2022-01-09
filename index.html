@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-index.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Home Page</title>
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html" id="logo">E-Wallet Mahasiswa</a>
+        <div id="login">
+          <a href="login-page.html">Login</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+        <div id="navbar-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="spesifikasi.html">Spesifikasi</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="container">
+      <div class="img1">
+        <img src="./img/img1.png" alt="student" width="560" height="350" style="border-radius: 5%;">
+      </div>
+      <div class="text1">
+          <h1>Permudah semua <br>transaksi kebutuhan<br>kuliah kamu</h1>
+          <p>Ucapkan selamat tinggal dengan metode pembayaran<br>yang menghabiskan banyak waktu dan tidak efisien<br>dengan menggunakan E-Wallet Mahasiswa.</p>
+      </div>
+      
+    </div>
+    <div class="container">
+      <div class="img2">
+        <img src="./img/img2.png" alt="student2" width="560" height="350" style="border-radius: 5%;">
+      </div>
+      <div class="text2">
+          <h1>Satu untuk semua<br>kebutuhan finansial<br>hidup Anda</h1>
+          <p>Nikmati kemudahan membayar<br>kebutuhan kuliah kamu, semua ada di platform terintegrasi ini.</p>
+      </div>
+    </div>
+
+    <div class="middle-text">
+      <h1>Solusi Pembayaran Untuk Anda</h1>
+      <p>Dengan teknologi yang fleksibel, nikmati transaksi yang lebih cepat.</p>
+    </div>
+
+    <div class="middle-cont">
+      <div class="like">
+        <img src="./logo/like.png" alt="like" class="img-logo">
+        <h2>Mudah Digunakan</h2>
+        <p style="font-size: 15px;">Cukup melalui menu utama, semua produk kami<br> bisa digunakan sesuai kebutuhan Kamu.</p>
+      </div>
+      <div class="send">
+        <img src="./logo/send.png" alt="send" class="img-logo">
+        <h2>Kirim dan menabung lebih efisien</h2>
+        <p style="font-size: 15px;">Dengan layanan yang <br>bisa diakses 24/7, Kamu bisa<br>membayar kebutuhan Kamu kapan saja.</p>
+      </div>
+      <div class="cs">
+        <img src="./logo/call-center.png" alt="cs" class="img-logo">
+        <h2>Customer Service</h2>
+        <p style="font-size: 15px;">Customer Service kami<br>siap membantumu kapan saja.</p>
+      </div>
+    </div>
+
+    <div class="bot-cont1">
+      <h1>Kami siap <br>membantu Anda</h1>
+      <p>Mulai sekarang dan rasakan mudahnya membayar keperluan kuliah<br>kamu. Kamu bisa memulainya sekarang.</p>
+      <a href="login-page.html" class="btn-mulai">Mulai Sekarang</a>
+    </div>
+
+    <div class="footer" id="footer">
+        Copyright &copy; 2022 Bagus Surya Mahendra
+    </div>
+    <! –– Javascript ––>
+    <script>
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction(){
+          if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+              document.getElementById("navbar").style.padding = "20px 30px";
+              document.getElementById("logo").style.fontSize = "30px";
+          }else{
+              document.getElementById("navbar").style.padding = "30px 30px";
+              document.getElementById("logo").style.fontSize = "35px";
+          }
+      }
+    </script>
+</body>
+</html>

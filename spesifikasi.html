@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-spesifikasi.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Product Page</title>
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html" id="logo">E-Wallet Mahasiswa</a>
+        <div id="login">
+          <a href="login-page.html">Login</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+        <div id="navbar-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="spesifikasi.html">Spesifikasi</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    
+    <div class="produk">
+        <h1>Spesifikasi Kami</h1>
+        <div class="row">
+            <div class="column">
+                <img src="./logo/pulsa.png" class="img-produk">
+                <h2>Pulsa</h2>
+                <p>Kamu bisa beli pulsa tanpa<br>perlu repot ke konter pulsa.</p>
+            </div>
+            <div class="column">
+                <img src="./logo/donasi.png" class="img-produk">
+                <h2>Donasi</h2>
+                <p>Kamu bisa donasi ke orang<br>yang membutuhkan.</p>
+            </div>
+            <div class="column">
+                <img src="./logo/wallet.png" class="img-produk">
+                <h2>Dompet</h2>
+                <p>Kamu bisa menabung<br>tanpa takut uang kamu berkurang tiap bulannya.</p>
+            </div>
+            <div class="column">
+                <img src="./logo/tagihan.png" class="img-produk">
+                <h2>Tagihan</h2>
+                <p>Kamu bisa tau apa saja yang<br>perlu kamu bayar untuk kebutuhan<br>kuliah kamu.</p>
+            </div>
+            <div class="column">
+                <img src="./logo/value.png" class="img-produk">
+                <h2>Tarik Tunai</h2>
+                <p>Kamu bisa tarik tunai dari produk kami<br>melalui mesin ATM apa saja.</p>
+            </div>
+            <div class="column">
+                <img src="./logo/shop.png"" class="img-produk">
+                <h2>Shop</h2>
+                <p>Kamu bisa membeli barang<br>seperti di e-commerce.</p>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="column1">
+                <img src="./logo/cht.png"" class="img-produk">
+                <h2>Chat Petugas</h2>
+                <p>Kamu bisa bertanya kepada<br>petugas jika mengalami kesulitan.</p>
+            </div>
+            <div class="column">
+                <img src="./logo/profits.png"" class="img-produk">
+                <h2>Keuangan</h2>
+                <p>Kamu bisa melihat bagaimana<br>keuangan Anda beberapa bulan terakhir.</p>
+            </div>
+        </div>
+      </div>
+
+    <div class="footer" id="footer">
+        Copyright &copy; 2022 Bagus Surya Mahendra
+    </div>
+
+    <! –– Javascript ––>
+    <script>
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction(){
+          if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+              document.getElementById("navbar").style.padding = "20px 30px";
+              document.getElementById("logo").style.fontSize = "30px";
+          }else{
+              document.getElementById("navbar").style.padding = "30px 30px";
+              document.getElementById("logo").style.fontSize = "35px";
+          }
+      }
+    </script>
+</body>
+</html>

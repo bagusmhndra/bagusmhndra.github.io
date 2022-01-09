@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-contact.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Contact Page</title>
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html" id="logo">E-Wallet Mahasiswa</a>
+        <div id="login">
+          <a href="login-page.html">Login</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+        <div id="navbar-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="spesifikasi.html">Spesifikasi</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div style="text-align:center">
+          <h2>Contact Us</h2>
+          <p>Silahkan hubungi Kami, atau tinggalkan pesan:</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="./img/contact-us.png" style="width:100%">
+          </div>
+          <div class="column">
+            <form action="#">
+              <label for="fname" class="label-nama">Nama Depan</label>
+              <input type="text" id="fname" name="firstname" placeholder="Nama depan..">
+              <label for="lname" class="label-nama">Nama Belakang</label>
+              <input type="text" id="lname" name="lastname" placeholder="Nama belakang..">
+              <label for="lkampus" class="label-nama">Asal Universitas</label>
+              <input type="text" id="lkampus" name="lkampus" placeholder="Asal Universitas..">
+              <label for="lemail" class="label-nama">E-mail</label>
+              <input type="text" id="lemail" name="lastname" placeholder="Email..">
+              <label for="lnomor" class="label-nama">Nomor Telepon</label>
+              <input type="text" id="lnomor" name="nomor" placeholder="+62..">
+              <label for="alamat" class="label-nama">Alamat</label>
+              <textarea id="alamat" name="alamat" placeholder="Alamat anda.." style="height:170px"></textarea>
+              <label for="subject" class="label-nama">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Tulis sesuatu.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+
+    <div class="footer" id="footer">
+        Copyright &copy; 2022 Bagus Surya Mahendra
+    </div>
+
+    <! –– Javascript ––>
+    <script>
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction(){
+          if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+              document.getElementById("navbar").style.padding = "20px 30px";
+              document.getElementById("logo").style.fontSize = "30px";
+          }else{
+              document.getElementById("navbar").style.padding = "30px 30px";
+              document.getElementById("logo").style.fontSize = "35px";
+          }
+      }
+    </script>
+</body>
+</html>

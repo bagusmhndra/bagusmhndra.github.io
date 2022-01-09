@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-about.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>About Page</title>
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html" id="logo">E-Wallet Mahasiswa</a>
+        <div id="login">
+          <a href="login-page.html">Login</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+        <div id="navbar-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="spesifikasi.html">Spesifikasi</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    
+    <div class="toptext">
+        <h1>Menyediakan Solusi Pembayaran Kuliah Untuk Mahasiswa</h1>
+        <p>Memberikan kemudahan dalam mengatur kebutuhan biaya maupun finansial Mahasiswa dengan menggunakan platform dari Mahasiswa untuk Mahasiswa.</p>
+    </div>
+    <br><br>
+    
+    <div class="container">
+        <div class="imgmisi">
+            <img src="./img/img3.png" alt="student" width="560" height="350" style="border-radius: 5%;">
+        </div>
+        <div class="misi-text">
+            <h1>Misi Kami</h1>
+            <p>Dimasa kini, tidak semua orang memiliki banyak waktuuntuk datang ke Bank ataupun ATM. Di jaman pandemi sekarang, kita juga masyarakat tidak dperbolehkan untuk datang ditempat yang ramai.
+            <br><br>
+            Kami membuat E-Wallet Mahasiswa dengan tujuan meyediakan layanan agar masyarakat dan mahasiswa tidak perlu datang ke Bank maupun ATM. Aplikasi berbasis web milik kami menyediakan layanan yang cepat, mudah digunakan, dan terjangkau bagi semua orang termasuk mahasiswa yang merupakan tujuan utama kami. 
+            </p>
+        </div>
+    </div>
+
+    <div class="container1">
+        <div class="next-text">
+            <h1>Langkah Berikutnya</h1>
+            <p>Kebutuhan dan kenyamanan Anda adalah ahrapan kami. Kami ingin agar Anda dapat fokus pada hal-hal yang lebih penting.
+            <br>
+            Kami akan selalu berusaha mengembangkan platform kami dan terus berinovasi serta menyempurnakan sistem yang telah ada, dan tidak lupa memberikan pegalaman yang menyenangkan saat menggunakan E-Wallet Mahasiswa.
+            </p>
+        </div>
+        <div class="img-next">
+            <img src="./img/next.png" alt="student" width="560" height="470" style="border-radius: 5%;">
+        </div>
+    </div>
+    
+    <div class="bot-cont1">
+        <h1>Kami siap <br>membantu Anda</h1>
+        <p>Mulai sekarang dan rasakan mudahnya membayar keperluan kuliah<br>kamu. Kamu bisa memulainya sekarang.</p>
+        <a href="login-page.html" class="btn-mulai">Mulai Sekarang</a>
+    </div>
+
+    <div class="footer" id="footer">
+        Copyright &copy; 2022 Bagus Surya Mahendra
+    </div>
+
+    <! –– Javascript ––>
+    <script>
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction(){
+          if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+              document.getElementById("navbar").style.padding = "20px 30px";
+              document.getElementById("logo").style.fontSize = "30px";
+          }else{
+              document.getElementById("navbar").style.padding = "30px 30px";
+              document.getElementById("logo").style.fontSize = "35px";
+          }
+      }
+    </script>
+</body>
+</html>
